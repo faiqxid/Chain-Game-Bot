@@ -37,7 +37,7 @@ while True:
             error = response['error']
             print(error)
             rand_delay = random.randint(60, 120)
-            delay = rand_delay*30
+            delay = rand_delay*60
             for i in range(delay, 0, -1):
                 minutes, seconds = divmod(i, 60)
                 hours, minutes = divmod(minutes, 60)
