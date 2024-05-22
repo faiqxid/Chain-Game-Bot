@@ -5,7 +5,20 @@
 
 ```bash
 apt install python -y
-pip install -r recruitment.txt
+```
+```bash
+apt install git -y
+```
+```bash
+git clone https://github.com/faiqxid/Chain-Game-Bot.git
+```
+```bash
+cd Chain-Game-Bot
+```
+```bash
+pip install requests
+```
+```bash
 python chain.py
 ```
 Untuk menjalankan Bot nya siapkan terlebih dahulu auth token nya ambil mengunakan inspect elemnt > di bagian network
