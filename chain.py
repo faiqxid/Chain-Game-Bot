@@ -4,14 +4,16 @@ import time
 
 def get_new_token(query_id):
     headers_token = {
-        'authority': 'db4.onchaincoin.io',
         'accept': 'application/json, text/plain, */*',
-        'accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
+        'accept-language': 'id-ID,id;q=0.9,en-ID;q=0.8,en;q=0.7,en-US;q=0.6',
         'content-type': 'application/json',
+        'dnt': '1',
+        'origin': 'https://db4.onchaincoin.io',
+        'priority': 'u=1, i',
         'referer': 'https://db4.onchaincoin.io/',
-        'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+        'sec-ch-ua': '""',
         'sec-ch-ua-mobile': '?1',
-        'sec-ch-ua-platform': '"Android"',
+        'sec-ch-ua-platform': '""',
         'sec-fetch-dest': 'empty',
         'sec-fetch-mode': 'cors',
         'sec-fetch-site': 'same-origin',
@@ -32,16 +34,17 @@ def main():
 
     while True:
         headers = {
-            'authority': 'db4.onchaincoin.io',
             'accept': 'application/json, text/plain, */*',
-            'accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
+            'accept-language': 'id-ID,id;q=0.9,en-ID;q=0.8,en;q=0.7,en-US;q=0.6',
             'authorization': f'Bearer {auth_token}',
             'content-type': 'application/json',
+            'dnt': '1',
             'origin': 'https://db4.onchaincoin.io',
+            'priority': 'u=1, i',
             'referer': 'https://db4.onchaincoin.io/',
-            'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+            'sec-ch-ua': '""',
             'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
+            'sec-ch-ua-platform': '"Andeoid"',
             'sec-fetch-dest': 'empty',
             'sec-fetch-mode': 'cors',
             'sec-fetch-site': 'same-origin',
